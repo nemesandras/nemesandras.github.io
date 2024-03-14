@@ -2523,7 +2523,7 @@
 
 			ul.icons li {
 				display: inline-block;
-				padding: 0 2em 0 0;
+				padding: 0 1em 0 0;
 			}
 
 				ul.icons li:last-child {
@@ -2997,8 +2997,12 @@
 						display: inline-block;
 						text-decoration: none;
 						border: 0;
+						transition: opacity 0.2s ease-in-out;
+						opacity: 0.75;
 					}
-
+						#header nav > ul > li a:not(.button):hover {
+							opacity: 1;
+						}
 						#header nav > ul > li a:not(.button).icon:before {
 							color: #999;
 							margin-right: 0.5em;
@@ -3257,7 +3261,7 @@
 
 	#footer {
 		background: #f0f0f0;
-		padding: 4em 0 6em 0;
+		padding: 3em 0 2em 0;
 		text-align: center;
 	}
 
